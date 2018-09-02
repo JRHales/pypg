@@ -12,7 +12,7 @@ class Player:
     self.attack = 0
     self.armor = 0
     self.defence = 0
-    self.hitpoints = (strength+(strength/2))*3
+    self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
   
   def setAttack(self):
     self.attack = self.strength+self.weaponDamage
