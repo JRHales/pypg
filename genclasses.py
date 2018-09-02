@@ -20,3 +20,6 @@ class Player:
   def setWeaponDamage(self, weapon):
     self.weaponDamage = weapon 
     self.setAttack()
+    
+  def redoHp(self):
+    self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
