@@ -1,7 +1,13 @@
 class Player:
-  def __init__(self, name, strength):
+  def __init__(self, name):
     self.name = name
-    self.strength = strength
+    self.strength = 5
+    self.vitality = 5
+    self.energy = 5
+    self.luck = 1
+    self.agility = 5
+    self.power = 5
+    
     self.weaponDamage = 0
     self.attack = 0
     self.armor = 0
