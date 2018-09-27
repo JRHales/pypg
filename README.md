@@ -1,4 +1,4 @@
 # pypg
 
-<H1 style="color: #00F;">To DO</H1>
+<H1 style="color:blue;">To DO</H1>
 
