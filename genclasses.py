@@ -38,17 +38,15 @@ class Player:
     self.setDefence()
 
 class Monster:
-  def __init__(self, name, strength, vitality, energy, agility, power):
+  
+  def __init__(self, name, strength, vitality, energy, agility, power, attack, defence):
     self.name = name
     self.strength = 1
     self.vitality = 1
     self.energy = 1
     self.agility = 1
     self.power = 1
-    
-    self.weaponDamage = 0
     self.attack = 1
-    self.armor = 0
     self.defence = 1
     self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
     
