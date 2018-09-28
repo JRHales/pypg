@@ -1,7 +1,8 @@
 
-# Not yet tested
+# Partially tested
 
 class Player:
+  
   def __init__(self, name):
     self.name = name
     self.strength = 1
@@ -10,6 +11,8 @@ class Player:
     self.luck = 1
     self.agility = 1
     self.power = 1
+    self.exp = 0
+    self.level = 1
     
     self.weaponDamage = 0
     self.attack = 1
@@ -33,3 +36,19 @@ class Player:
   def setArmorDefence(self, armor):
     self.armor = armor
     self.setDefence()
+
+class Monster:
+  def __init__(self, name, strength, vitality, energy, agility, power):
+    self.name = name
+    self.strength = 1
+    self.vitality = 1
+    self.energy = 1
+    self.agility = 1
+    self.power = 1
+    
+    self.weaponDamage = 0
+    self.attack = 1
+    self.armor = 0
+    self.defence = 1
+    self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
+    
