@@ -20,23 +20,21 @@ class Player:
     self.defence = 1
     self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
   
-  def setAttack(self):
+  def setAttack(self, weaponVal):
+    self.weaponDamage = weaponVal
     self.attack = self.strength+self.weaponDamage
-
-  def setWeaponDamage(self, weapon):
-    self.weaponDamage = weapon 
-    self.setAttack()
     
-  def maxHp(self):
+  def setMaxHp(self): # use to update max HP
     self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
    
-  def setDefence(self):
+  def setDefence(self,  armorVal):
+    self.armor = armorVal
     self.defence = self.strength+self.armor
+    
+  def getName():
+    return self.Name
   
-  def setArmorDefence(self, armor):
-    self.armor = armor
-    self.setDefence()
-
+#End Player Class ---------------------------------------------------------------
 class Monster:
   
   def __init__(self, name, strength, vitality, energy, agility, power, attack, defence):
@@ -50,3 +48,4 @@ class Monster:
     self.defence = 1
     self.hitpoints = round((self.vitality+(self.strength/2)+(self.energy/3)))
     
+#End Monster Class ----------------------------------------------------------------------
